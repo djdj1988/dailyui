@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DailyUI #1</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            height: 100vh;
+        }
+        .container {
+            height: 100vh;
+            background: linear-gradient(-18deg, #c8d3d5, #6e8387, #fcfafa, #a4b8c4);
+	        background-size: 400% 400%;
+	        animation: gradient 15s ease infinite;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Lisu Bosa', serif;
+        }
+        @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+}
+        .login-card {
+            width: 300px;
+            color: #42a59f;
+            padding: 80px;
+        }
+        .card-title {
+            font-size: 28px;
+            background-color: #248277;
+            border-bottom: solid #AAA 4px;
+            padding-bottom: 10px;
+        }
+        .card-body {
+            padding-top: 40px;
+            background-color: #248277;
+            display: flex;
+            flex-flow: column nowrap;
+            text-align: left;
+            justify-content: start;
+        }
+        input {
+            margin-bottom: 24px
+        }
+        label {
+            margin-bottom: 3px;
+        }
+        .textfield {
+            font-size: 25px;
+            background-color: #AAA;
+            border: none;
+        }
+        .submitbtn {
+            font-size: 23px;
+        }
+        [type="checkbox"]
+        {
+            transform: scale(1.4);
+            vertical-align:baseline;
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lisu+Bosa&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="login-card">
+            <div class="card-title">Login</div>
+            <div class="card-body">
+                <label for="username">Email Address:</label>
+                <input class="textfield" type="text" id="username" name="username">
+                <label for="pwd">Password:</label>
+                <input class="textfield" type="password" id="pwd" name="pwd">
+                <label for="remember"><input type="checkbox" id="remember" name="remember">&nbsp;Remember Me</label>
+                <button class="submitbtn">Log In</button>
+                <a href="#">Forgot Your Password?</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily UI #2</title>
+    <style>
+        .payment-info {
+            display: flex;
+            flex-flow: column nowrap;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="payment-card">
+            <div class="payment-info">
+                <label for="cardholder-name">Cardholder name</label>
+                <input type="text" id="cardholder-name">
+                <label for="cc-number">Credit card number</label>
+                <input type="tel" id="cc-number">
+                <label for="exp-date">Expiration date</label>
+                <input type="month" id="exp-date" min="2023-08" max="2033-12" value="2005-12" pattern="[0-9]{4}-[0-9]{2}" >
+                <label for="sec-code">Security code</label>
+                <input type="password" name="sec-code" id="sec-code" maxlength="3">
+            </div>
+            <div class="selected-product-info"></div>
+        </div>
+    </div>
+</body>
+</html>
